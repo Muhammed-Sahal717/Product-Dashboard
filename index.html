@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Product Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Dashboard</h1>
+    </header>
+    <main>
+        <section id="controls">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Search products">
+
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </section>
+
+        <section id="productsSection">
+            <div id="loading" hidden>Loading...</div>
+            <div id="error" style="color: red;" hidden></div>
+            <div id="productsContainer"></div>
+        </section>
+
+        <section id="summary" class="products-summary">
+            <p>Total Products: <span id="totalCount">0</span></p>
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mini Product Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
